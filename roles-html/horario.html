@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+    <link rel="stylesheet" href="../estilos/horario_styles.css">
+</head>
+<body>
+    <div class="horario-container">
+        <h2>Ver Horarios</h2>
+        <div class="filters">
+            <label for="periodo">Seleccionar Periodo</label>
+            <select id="periodo" class="dropdown">
+                <option value="2024-I">2024-I</option>
+                <option value="2024-II">2024-II</option>
+            </select>
+
+            <label for="ciclo">Seleccionar Ciclo</label>
+            <select id="ciclo" class="dropdown">
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+                <option value="VI">VI</option>
+                <option value="VII">VII</option>
+                <option value="VIII">VIII</option>
+                <option value="IX">IX</option>
+                <option value="X">X</option>
+            </select>
+
+            <label for="seccion">Seleccionar Sección</label>
+            <select id="seccion" class="dropdown">
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select>
+        </div>
+
+        <table id="tabla-horario">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se cargarán los horarios dinámicamente -->
+            </tbody>
+        </table>
+        <!-- Botón Volver -->
+    <div class="volver-container">
+    <button id="volver-btn" class="volver-btn">Volver</button>
+</div>
+
+    </div>
+
+    <script src="../javaScript-roles/horario.js"></script>
+</body>
+</html>

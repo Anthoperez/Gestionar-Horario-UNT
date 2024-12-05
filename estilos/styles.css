@@ -1,0 +1,195 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f1fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------- */
+
+/* Estilos para la interfaz del administrador */
+
+  /* ---------------------------------------------------------- */
+  
+  /* Estilos para la interfaz del docente */
+  .docente-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .docente-header {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .docente-nav {
+    width: 200px;
+    background-color: #28a745;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  
+  .docente-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .docente-nav ul li {
+    padding: 10px;
+  }
+  
+  .docente-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .docente-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  /* ---------------------------------------------------------- */
+  
+  /* Estilos para la interfaz del estudiante */
+  .estudiante-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .estudiante-header {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .estudiante-nav {
+    width: 200px;
+    background-color: #ffc107;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  
+  .estudiante-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .estudiante-nav ul li {
+    padding: 10px;
+  }
+  
+  .estudiante-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .estudiante-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
