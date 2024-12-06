@@ -1,33 +1,35 @@
-/* Estilo de la interfaz de Disponibilidad */
+/* Contenedor principal */
 .container {
     width: 80%;
     margin: 0 auto;
     padding-top: 50px;
-}
-
-h2 {
     text-align: center;
+}
+
+/* Título */
+h2 {
     margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-form label {
-    margin: 10px 0;
-}
-
-form select, form input {
+table th, table td {
+    border: 1px solid #ddd;
     padding: 10px;
-    margin: 5px 0;
-    width: 300px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f4f4f4;
 }
 
 button {
+    margin: 10px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -39,15 +41,10 @@ button:hover {
     background-color: #45a049;
 }
 
-#regresar-btn {
-    margin-top: 20px;
+#volver-btn {
     background-color: #f44336;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
 }
 
-#regresar-btn:hover {
+#volver-btn:hover {
     background-color: #da190b;
 }
