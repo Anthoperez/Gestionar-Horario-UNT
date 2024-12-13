@@ -1,7 +1,12 @@
 /* styles.css */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-image: url('../img/img_unt.png'); /* Usar la imagen que subiste */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     background-color: #e8f1fd;
     display: flex;
     justify-content: center;
@@ -12,7 +17,7 @@ body {
 .container {
     display: flex;
     width: 80%;
-    max-width: 1200px;
+    max-width: 400px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

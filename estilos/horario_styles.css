@@ -1,6 +1,11 @@
 /* Estilos para la página de horarios */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-image: url('../img/img_unt.png'); /* Usar la imagen que subiste */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;

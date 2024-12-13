@@ -1,34 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar Disponibilidad</title>
+    <title>Disponibilidad Docente</title>
     <link rel="stylesheet" href="../estilos/disponibilidad.css">
 </head>
 <body>
     <div class="container">
-        <h2>Modificar Disponibilidad</h2>
-        <p>Selecciona los días disponibles y asigna las horas:</p>
+        <h2>Disponibilidad Docente</h2>
 
-        <!-- Tabla dinámica -->
-        <table id="tabla-disponibilidad">
-            <thead>
-                <tr>
-                    <th>Día</th>
-                    <th>Horas Disponibles</th>
-                    <th>Acción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Las filas se agregarán dinámicamente -->
-            </tbody>
-        </table>
+        <!-- Sección para seleccionar tipo de docente -->
+        <label for="tipo-docente">Tipo de Docente:</label>
+        <select id="tipo-docente">
+            <option value="nombrado">Nombrado</option>
+            <option value="contratado">Contratado</option>
+        </select>
+        <p id="limite-horas">Límite de horas: 16</p>
 
-        <button id="agregar-dia">Agregar Día</button>
-        <button id="guardar-disponibilidad">Guardar Disponibilidad</button>
+        <form id="disponibilidad-form">
+            <table id="tabla-disponibilidad">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Disponible</th>
+                        <th>Horas Disponibles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td><input type="checkbox" class="dia-disponible" id="lunes" name="lunes"></td>
+                        <td><input type="number" class="horas" id="horas-lunes" name="horas-lunes" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td><input type="checkbox" class="dia-disponible" id="martes" name="martes"></td>
+                        <td><input type="number" class="horas" id="horas-martes" name="horas-martes" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td><input type="checkbox" class="dia-disponible" id="miercoles" name="miercoles"></td>
+                        <td><input type="number" class="horas" id="horas-miercoles" name="horas-miercoles" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td><input type="checkbox" class="dia-disponible" id="jueves" name="jueves"></td>
+                        <td><input type="number" class="horas" id="horas-jueves" name="horas-jueves" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td><input type="checkbox" class="dia-disponible" id="viernes" name="viernes"></td>
+                        <td><input type="number" class="horas" id="horas-viernes" name="horas-viernes" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="submit" id="guardar-disponibilidad">Guardar Disponibilidad</button>
+            <!-- Botón para reiniciar -->
+<button id="reiniciar-btn" type="button" class="btn btn-secondary">
+    Reiniciar
+</button>
+
+        </form>
+
         <button id="volver-btn">Volver</button>
+
     </div>
+
 
     <script src="../javaScript-roles/disponibilidad.js"></script>
 </body>
